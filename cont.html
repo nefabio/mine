@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGMine | Магазин аккаунтов майнкрафт</title>
+    <!--LINK-->
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.ico">
+    <style>
+        body {
+            background-image: url("https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft");
+            background-size: cover;
+        }
+        .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        overflow: auto;
+    }
+    .modal_content {
+        margin: 400px auto;
+        background-color: #fff;
+        padding: 20px;
+        width: 25%;
+        z-index: 99999;
+    }
+    .close_modal {
+        color: #000;
+        float: right;
+        font-size: 100px;
+        cursor: pointer;
+    }
+    input {
+        margin: 10px 0;
+        padding: 10px;
+        border: unset;
+        border-bottom: 2px solid #e3e3e3;
+        outline: none;
+    }
+    button {
+        padding: 10px;
+        background: rgb(255, 255, 255);
+        border: unset;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html"><img src="logo.jpg" width="15px"></a></li>
+        <li><a href="how.html" style="font-family: Arial;">Как купить</a></li>
+        <li><a href="faq.html" style="font-family: Arial;">Соглашение</a></li>
+        <li><a href="cont.html" style="font-family: Arial;">Контакты</a></li>
+        <li><a href="help.html" style="font-family: Arial;">Помощь</a></li>
+        <li class="pointer" style="float:right"><button id="btn_modal_window">Профиль</button></li>
+        <div class="modal" id="mymodal">
+            <div class="modal_content">
+                <span class="close_modal">&times;</span>
+                <form>
+                    <input type="text" name="login" placeholder="Логин" required>
+                    <input type="password" name="pass" placeholder="Пароль" required>
+                    <button type="submit">войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+            </ul>
+    </ul>
+    <h1>Контакты</h1>
+    <p>Discord: мистер писька#6455</p>
+    <p>VK: https://vk.com/skladochkaa</p>
+    <p>Instagram: skladochka_play</p>
+</body>
+<script src="index.js"></script>
+<script>
+    var modal = document.getElementById("mymodal");
+    var btn = document.getElementById("btn_modal_window");
+    var close = document.getElementsByClassName("close_modal")[0];
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    close.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if(event.target == modal) {
+            modal.style.display = "none";
+        }
+    }  
+</script>
+</html>

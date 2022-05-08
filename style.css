@@ -1,0 +1,30 @@
+h1 {
+    font-family: Arial;
+    color: rgb(161, 153, 196);
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    font-family: Arial;
+    color: rgb(196, 153, 171);
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+.steam {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(75, 73, 73);
+    font-family: Arial;
+}
+.minecraft {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(75, 73, 73);
+    font-family: Arial;
+}
